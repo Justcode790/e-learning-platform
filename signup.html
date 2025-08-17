@@ -13,35 +13,38 @@
   <header>
     <div class="navbar">
       <div class="logo">Learnify</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="auth-section">
       <a href="login.html" class="btn-login">Login</a>
     </div>
+  </div>
   </header>
 
   <!-- Signup Form -->
   <main>
     <section class="auth-section">
-      <div class="container auth-container">
-        <h2>Create an Account</h2>
-        <form class="auth-form">
+      <div class="container">
+        <h1>Join Learnify</h1>
+        <h2>Create Your Account</h2>
+        <form class="auth-form" id="signupForm">
           <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required />
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Enter your email" required />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
           </div>
           <div class="form-group">
-            <label for="password">Create Password</label>
-            <input type="password" id="password" placeholder="Create a password" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required />
           </div>
           <button type="submit" class="btn-submit">Sign Up</button>
           <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
@@ -50,12 +53,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>© 2025 Learnify. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <script src="auth.js"></script>
+  <script src="signup.js"></script>
 </body>
 </html>
